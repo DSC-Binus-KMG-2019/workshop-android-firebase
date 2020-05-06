@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                                         Intent intent = new Intent(MainActivity.this, FirestoreActivity.class);
                                         intent.putExtra("uid", user.getUid());
                                         startActivity(intent);
+                                        MainActivity.this.finish();;
                                     }
                                 }
                             });
